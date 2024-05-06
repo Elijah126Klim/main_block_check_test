@@ -24,7 +24,6 @@ void PrintArray(string[] array) // Имеющийся массив строк
     Console.WriteLine("]");
 }
 
-
 ﻿int LineThreeSignsMax(string[] array) // Строка из 3х или менее символов, l - length (длина строк)
 {
     int l = 0;
@@ -40,14 +39,14 @@ void PrintArray(string[] array) // Имеющийся массив строк
 
 string[] CreateNewArray(string[] array) // Формируем новый массив из строк, длина которых меньше, либо равна 3 символам. 
 {
-    int k = 0;
+    int l = 0;
     string[] newArray = new string[LineThreeSignsMax(array)];
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
         {
-            newArray[k] = array[i];
-            k++;
+            newArray[l] = array[i];
+            l++;
         }
     }
     return newArray;
